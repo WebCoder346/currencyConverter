@@ -1,78 +1,162 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #f4e4ba;
+
+body {
+  background-color: #F4E4BA;
   display: flex;
-  height:100vh;
-  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container{
-  background:white;
-  /* height:80%; */
-  width:46%;
+
+nav {
+  width: 100%;
+  background: #8A1D70;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+nav i{
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  background: white;
+  width: 46%;
   border-radius: 1rem;
-  /* margin: 5% 0; */
+  margin: 8rem 0;
   padding: 1rem;
 }
-form label{
+
+form label {
   display: block;
   margin-top: 0.5rem;
-  
+
 }
-form input{
-  outline:none;
+
+form input {
+  outline: none;
   border: 2px solid gray;
   font-size: 1.2rem;
   border-radius: 0.5rem;
   padding: 0 0.5rem;
-  width:100%;
-  height:2.5rem;  
+  width: 100%;
+  height: 2.5rem;
 }
-.exchangeBox{
+
+.exchangeBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
 }
-.exchangeBox .selectBox img{
-  height:2.5rem;
+
+.exchangeBox .selectBox img {
+  height: 2.5rem;
   border-radius: 0.2rem;
 }
-.exchangeBox i{
+
+.exchangeBox i {
   margin-top: 1.5rem;
   font-size: 1.3rem;
 }
-.exchangeBox .selectBox{
+
+.exchangeBox .selectBox {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-evenly;
-  border:2px solid gray;
-  padding:0 0.5rem;
+  border: 2px solid gray;
+  padding: 0 0.5rem;
   border-radius: 0.5rem;
 }
-.exchangeBox .selectBox select{
-  border:none;
+
+.exchangeBox .selectBox select {
+  border: none;
   font-size: 1.2rem;
   background: transparent;
-  outline:none;
+  outline: none;
 }
-.resultBox{
+
+.resultBox {
   font-size: 1.3rem;
   margin-top: 2rem;
 }
-.container form button{
+
+.container form button {
   font-size: 1.3rem;
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
   background: #af4d98;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color:white;
-  width:100%;
+  color: white;
+  width: 100%;
   margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #8A1D70;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer .iconCon i {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+footer .websiteBox i {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  color: white;
+}
+
+footer .websiteBox a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: underline;
+}
+
+footer span {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .container {
+    /* height: 75vh; */
+    width: 80vw;
+  }
+
+  .exchangeBox i {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
